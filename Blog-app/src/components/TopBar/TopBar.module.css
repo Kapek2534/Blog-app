@@ -1,0 +1,16 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.topBar > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+  width: 150px;
+}
