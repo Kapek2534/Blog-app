@@ -5,11 +5,12 @@ import "./styles/theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Layout } from "./components/Layout/Layout.jsx";
+import { MainPage } from "./views/MainPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: <Layout />,
+    element: <MainPage />,
   },
 ]);
 

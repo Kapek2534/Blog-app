@@ -1,0 +1,12 @@
+.offersHeader {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.offersWrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}

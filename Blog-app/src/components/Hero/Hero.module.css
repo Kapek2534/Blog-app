@@ -1,0 +1,26 @@
+.hero {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/hero_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contentWrapper {
+  padding: 3.5rem 5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+}
+
+.contentWrapper p {
+  margin-top: 1rem;
+}
