@@ -1,0 +1,18 @@
+.postListWrapper {
+  padding-top: 7rem;
+  padding-left: 250px;
+}
+
+.postListWrapper h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.postList {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}

@@ -6,11 +6,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Layout } from "./components/Layout/Layout.jsx";
 import { MainPage } from "./views/MainPage.jsx";
+import { PostsPage } from "./views/PostsPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: <MainPage />,
+    element: <PostsPage />,
   },
 ]);
 

@@ -1,0 +1,20 @@
+.topic {
+  overflow: hidden;
+  max-width: max-content;
+}
+
+.topic > span {
+  color: var(--color-text-default);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 0.7rem 1rem;
+}
+
+.topic > span:hover {
+  transform: scale(1.02);
+  background-color: rgb(223, 223, 223);
+}
