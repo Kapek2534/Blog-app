@@ -12,6 +12,9 @@
   width: 100%;
   height: 100%;
   background-color: var(--color-violet-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bar h4,
@@ -25,4 +28,17 @@ span {
 .post p {
   padding: 0 1rem;
   letter-spacing: 0.5px;
+}
+
+.heartIcon {
+  color: var(--color-white);
+  margin: 1rem;
+  transition: 0.2s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.heartIcon:hover {
+  transform: scale(1.3);
+  color: var(--color-violet);
+  cursor: pointer;
 }

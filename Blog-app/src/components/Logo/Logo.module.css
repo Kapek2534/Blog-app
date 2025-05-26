@@ -3,3 +3,7 @@
   padding-left: 2rem;
   width: 150px;
 }
+
+.logo:hover {
+  cursor: pointer;
+}

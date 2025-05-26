@@ -1,0 +1,23 @@
+.iconWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartIcon {
+  color: var(--color-text-default);
+  transition: 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.heartIcon:hover {
+  transform: scale(1.3);
+  color: var(--color-violet);
+  cursor: pointer;
+}
+
+.lightmodeSelector {
+  padding: 0.5rem;
+  width: 75px;
+}
