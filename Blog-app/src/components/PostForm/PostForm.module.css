@@ -1,0 +1,55 @@
+.formWrapper {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 2px solid rgb(153, 7, 226);
+  border-radius: 12px;
+  background-color: #f9f4fc;
+  box-shadow: 0 4px 12px rgba(153, 7, 226, 0.2);
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.postForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.postForm input,
+.postForm textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.postForm input:focus,
+.postForm textarea:focus {
+  outline: none;
+  border-color: rgb(153, 7, 226);
+  box-shadow: 0 0 4px rgb(153, 7, 226);
+}
+
+.postForm button {
+  background-color: rgb(153, 7, 226);
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.postForm button:hover {
+  background-color: rgb(123, 6, 185);
+}

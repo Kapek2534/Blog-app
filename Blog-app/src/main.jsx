@@ -12,7 +12,7 @@ import { Favourites } from "./views/Favourites.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Favourites />,
+    element: <PostsPage />,
   },
 ]);
 
