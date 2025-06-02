@@ -4,6 +4,7 @@
   background-image: url("../../assets/hero_img.jpg");
   background-size: cover;
   background-position: center;
+  /* margin-top: 5rem; */
 }
 
 .contentWrapper {
@@ -19,6 +20,10 @@
   justify-content: center;
   align-items: center;
   max-width: max-content;
+}
+
+.contentWrapper h2 {
+  padding: 0;
 }
 
 .contentWrapper p {

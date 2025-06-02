@@ -25,11 +25,11 @@ const offers = [
   },
   {
     id: 3,
-    title: "Dodaj post",
-    description: "Dodawaj dowolne posty",
+    title: "Ulubione",
+    description: "Zobacz ulubione posty",
     photo: add,
-    alt: "Dodanie posta",
-    buttonText: "Dodaj",
+    alt: "Ulubione posty",
+    buttonText: "Ulubione",
   },
 ];
 

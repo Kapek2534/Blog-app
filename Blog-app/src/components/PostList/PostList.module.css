@@ -1,10 +1,6 @@
-.postListWrapper {
-  padding-top: 0rem;
-  padding-left: 250px;
-}
-
-.postListWrapper h2 {
+.postListWrapper > h2 {
   text-align: center;
+  padding: 2rem;
 }
 
 .postListWrapper button {
@@ -17,7 +13,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -26,7 +22,7 @@
 }
 
 .postList {
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

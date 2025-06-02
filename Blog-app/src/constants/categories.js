@@ -8,7 +8,7 @@ export const CATEGORIES = [
     path: "about",
   },
   {
-    categoryName: "Dodaj wpis",
-    path: "add",
+    categoryName: "Ulubione",
+    path: "favourites",
   },
 ];
