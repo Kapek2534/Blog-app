@@ -8,11 +8,12 @@ import { Layout } from "./components/Layout/Layout.jsx";
 import { MainPage } from "./views/MainPage.jsx";
 import { PostsPage } from "./views/PostsPage.jsx";
 import { Favourites } from "./views/Favourites.jsx";
+import { AboutPage } from "./views/AboutPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <PostsPage />,
+    element: <AboutPage />,
   },
 ]);
 
