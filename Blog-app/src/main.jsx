@@ -12,8 +12,27 @@ import { AboutPage } from "./views/AboutPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <AboutPage />,
+    path: "",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        path: "/main",
+        element: <MainPage />,
+      },
+      {
+        path: "/posts",
+        element: <PostsPage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "/favourites",
+        element: <Favourites />,
+      },
+    ],
   },
 ]);
 

@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 
 export function Offer({ offer }) {
   return (
-    <Link className={styles.offer}>
+    <Link to={offer.path} className={styles.offer}>
       <img src={offer.photo} alt={offer.alt} />
       <h3>{offer.title}</h3>
       <p>{offer.description}</p>

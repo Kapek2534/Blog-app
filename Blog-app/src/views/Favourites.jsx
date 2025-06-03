@@ -19,9 +19,5 @@ const favouritePosts = [
 ];
 
 export function Favourites() {
-  return (
-    <Layout>
-      <FavouritesList posts={favouritePosts} />
-    </Layout>
-  );
+  return <FavouritesList posts={favouritePosts} />;
 }

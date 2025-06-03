@@ -1,7 +1,7 @@
 export const CATEGORIES = [
   {
     categoryName: "Wpisy",
-    path: "wpisy",
+    path: "posts",
   },
   {
     categoryName: "O nas",

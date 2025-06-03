@@ -1,4 +1,3 @@
-import { Layout } from "../components/Layout/Layout";
 import { PostList } from "../components/PostList/PostList";
 import { Topics } from "../components/Topics/Topics";
 import { FlexContainer } from "../components/FlexContainer/FlexContainer";
@@ -43,11 +42,9 @@ const posts = [
 
 export function PostsPage() {
   return (
-    <Layout>
-      <FlexContainer>
-        <Topics posts={posts} />
-        <PostList posts={posts} />
-      </FlexContainer>
-    </Layout>
+    <FlexContainer>
+      <Topics posts={posts} />
+      <PostList posts={posts} />
+    </FlexContainer>
   );
 }

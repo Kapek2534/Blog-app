@@ -1,4 +1,3 @@
-import { Layout } from "../components/Layout/Layout";
 import { Hero } from "../components/Hero/Hero";
 import { Offers } from "../components/Offers/Offers";
 
@@ -14,6 +13,7 @@ const offers = [
     photo: search,
     alt: "Przeglądanie postów",
     buttonText: "Zobacz",
+    path: "/posts",
   },
   {
     id: 2,
@@ -22,6 +22,7 @@ const offers = [
     photo: about,
     alt: "O blogu",
     buttonText: "Poznaj",
+    path: "/about",
   },
   {
     id: 3,
@@ -30,14 +31,15 @@ const offers = [
     photo: add,
     alt: "Ulubione posty",
     buttonText: "Ulubione",
+    path: "/favourites",
   },
 ];
 
 export function MainPage() {
   return (
-    <Layout>
+    <>
       <Hero />
       <Offers offers={offers} />
-    </Layout>
+    </>
   );
 }
