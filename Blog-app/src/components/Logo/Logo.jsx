@@ -3,7 +3,7 @@ import styles from "./Logo.module.css";
 
 export function Logo() {
   return (
-    <Link to="/main">
+    <Link to="">
       <h1 className={styles.logo}>BLOG</h1>
     </Link>
   );
