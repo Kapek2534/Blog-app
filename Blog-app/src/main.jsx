@@ -10,6 +10,8 @@ import { PostsPage } from "./views/PostsPage.jsx";
 import { Favourites } from "./views/Favourites.jsx";
 import { AboutPage } from "./views/AboutPage.jsx";
 
+import { postsListLoader } from "./api/postsListLoader.js";
+
 const router = createBrowserRouter([
   {
     path: "",
@@ -22,6 +24,7 @@ const router = createBrowserRouter([
       {
         path: "posts",
         element: <PostsPage />,
+        loader: postsListLoader,
       },
       {
         path: "about",

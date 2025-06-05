@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
+import { BACK_END_URL } from "../../constants/api";
 import styles from "./PostForm.module.css";
 
-import { Form } from "react-router-dom";
+// import { Form } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 export function PostForm() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -22,15 +26,35 @@ export function PostForm() {
     );
   }
 
-  const onSubmit = (data) => {
-    console.log("Dane z formularza:", data);
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch(`${BACK_END_URL}/posts`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: data.title,
+          description: data.content,
+          author: data.author,
+        }),
+      });
 
-    reset();
+      if (!response.ok) {
+        throw new Error("Nie udało się dodać posta");
+      }
+
+      reset();
+      navigate("/posts");
+    } catch (error) {
+      console.error(error);
+      alert("Błąd dodawania posta");
+    }
   };
 
   return (
     <div className={styles.formWrapper}>
-      <Form onSubmit={handleSubmit(onSubmit)} className={styles.postForm}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.postForm}>
         <div>
           <label htmlFor="title">Tytuł:</label>
           <input
@@ -69,7 +93,7 @@ export function PostForm() {
           )}
         </div>
         <button disabled={!isDirty}>Dodaj post</button>
-      </Form>
+      </form>
     </div>
   );
 }
