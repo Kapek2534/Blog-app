@@ -1,0 +1,21 @@
+.emptyContainer {
+  padding: 2rem;
+  border: 2px dashed var(--color-violet-light);
+  background-color: rgba(153, 7, 226, 0.05);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-violet);
+  max-width: fit-content;
+  margin: 3rem auto;
+}
+
+.emptyContainer > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-violet);
+}
+
+.emptyContainer > p {
+  font-size: 1rem;
+  color: #5e5e5e;
+}

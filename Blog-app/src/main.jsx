@@ -11,6 +11,7 @@ import { Favourites } from "./views/Favourites.jsx";
 import { AboutPage } from "./views/AboutPage.jsx";
 
 import { postsListLoader } from "./api/postsListLoader.js";
+import { favouritesPostsLoader } from "./api/favouritesPostsLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       {
         path: "favourites",
         element: <Favourites />,
+        loader: favouritesPostsLoader,
       },
     ],
   },
