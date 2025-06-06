@@ -3,9 +3,9 @@
   padding: 2rem;
 }
 
-.postListWrapper button {
-  background-color: rgb(153, 7, 226);
-  color: white;
+.postListWrapper > button {
+  background-color: var(--color-violet);
+  color: var(--color-white);
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
@@ -17,7 +17,7 @@
   display: block;
 }
 
-.postListWrapper button:hover {
+.postListWrapper > button:hover {
   background-color: rgb(123, 6, 185);
 }
 

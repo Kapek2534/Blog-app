@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { BACK_END_URL } from "../../constants/api";
 import styles from "./PostForm.module.css";
 
-// import { Form } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 export function PostForm() {
@@ -21,7 +20,9 @@ export function PostForm() {
     return (
       <>
         <span className={styles.title}>Post dodany!</span>
-        <button onClick={() => reset()}>Dodaj kolejny post</button>
+        <button className={styles.addAnotherPost} onClick={() => reset()}>
+          Dodaj kolejny post
+        </button>
       </>
     );
   }
