@@ -1,0 +1,29 @@
+.favouritePost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fetcherButton {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.fetcherButton:hover {
+  cursor: auto;
+}
+
+.xmarkIcon {
+  color: var(--color-violet);
+  transition: 0.2s ease-in-out;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.xmarkIcon:hover {
+  transform: scale(1.3);
+  color: red;
+  cursor: pointer;
+}

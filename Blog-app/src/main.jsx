@@ -12,12 +12,12 @@ import { AboutPage } from "./views/AboutPage.jsx";
 
 import { postsListLoader } from "./api/postsListLoader.js";
 import { favouritesPostsLoader } from "./api/favouritesPostsLoader.js";
-import { addPostToFavourites } from "./api/addPostToFavouritesAction.js";
+import { favouritesAction } from "./api/favouritesAction.js";
 
 const router = createBrowserRouter([
   {
     path: "/favourites/:postId",
-    action: addPostToFavourites,
+    action: favouritesAction,
   },
   {
     path: "",
