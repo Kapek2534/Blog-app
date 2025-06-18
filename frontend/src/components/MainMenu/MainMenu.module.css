@@ -9,7 +9,7 @@
 .mainMenu li a {
   text-transform: uppercase;
   color: gray;
-  padding: 1rem 0;
+  padding: 0.3rem;
   display: block;
   font-weight: 700;
 }

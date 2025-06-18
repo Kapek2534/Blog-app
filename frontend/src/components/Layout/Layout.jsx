@@ -7,13 +7,18 @@ import { IconMenu } from "../IconMenu/IconMenu";
 import { AnimatePresence } from "motion/react";
 import { OutletWrapper } from "../OutletWrapper/OutletWrapper";
 
+import { LightmodeContext } from "../../contexts/LightmodeContext";
+
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export function Layout() {
   const location = useLocation();
 
+  const [isDark, setIsDark] = useState(false);
+
   return (
-    <>
+    <LightmodeContext.Provider value={[isDark, setIsDark]}>
       <MainContent>
         <TopBar>
           <Logo />
@@ -27,6 +32,6 @@ export function Layout() {
         </AnimatePresence>
       </MainContent>
       <Footer />
-    </>
+    </LightmodeContext.Provider>
   );
 }

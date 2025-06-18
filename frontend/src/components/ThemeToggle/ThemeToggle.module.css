@@ -1,0 +1,16 @@
+.lightmode {
+  width: 30px;
+  height: 30px;
+  background: var(--color-violet-light);
+  border: none;
+  border-radius: 50%;
+}
+
+.lightmode:hover {
+  background-color: var(--color-violet-light);
+}
+
+.lightmodeIcon {
+  color: var(--color-white);
+  font-size: 1.2rem;
+}

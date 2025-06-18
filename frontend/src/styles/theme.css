@@ -6,5 +6,9 @@ body {
   --color-text-default: #222020;
   --color-violet: rgb(153, 7, 226);
   --color-violet-light: rgba(153, 7, 226, 0.7);
-  --color-white: white;
+  --color-white: rgb(241, 241, 241);
+  /* Dark mode */
+  --color-dark-main: rgb(40, 40, 48);
+  --color-dark-side: rgb(32, 33, 35);
+  --color-white-dark-theme: rgb(224, 224, 224);
 }
