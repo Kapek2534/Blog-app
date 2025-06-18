@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
+import styles from "./OutletWrapper.module.css";
+
 export function OutletWrapper() {
   return (
     <motion.div

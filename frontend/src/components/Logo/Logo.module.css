@@ -2,8 +2,13 @@
   text-transform: uppercase;
   padding-left: 2rem;
   width: 150px;
+  transition: 0.2s ease-in-out;
 }
 
 .logo:hover {
   cursor: pointer;
+}
+
+.logo.dark {
+  color: var(--color-white-dark-theme);
 }

@@ -16,3 +16,7 @@
   color: var(--color-violet);
   cursor: pointer;
 }
+
+.heartIcon.dark {
+  color: var(--color-white-dark-theme);
+}

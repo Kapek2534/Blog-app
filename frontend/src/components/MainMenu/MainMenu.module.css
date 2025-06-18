@@ -12,9 +12,14 @@
   padding: 0.3rem;
   display: block;
   font-weight: 700;
+  transition: 0.2s ease-in-out;
 }
 
 .mainMenu a:global(.active) {
   color: var(--color-violet);
   border-bottom: 3px solid var(--color-violet);
+}
+
+.mainMenu li a.dark {
+  color: var(--color-white-dark-theme);
 }

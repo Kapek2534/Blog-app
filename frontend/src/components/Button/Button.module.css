@@ -8,4 +8,9 @@
   text-align: center;
   font-size: 1rem;
   font-family: var(--font-family-default);
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(120, 3, 178);
 }

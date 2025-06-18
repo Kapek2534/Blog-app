@@ -8,6 +8,7 @@
   background-color: white;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   z-index: 999;
+  transition: 0.2s ease-in-out;
 }
 
 .topBar > div {
@@ -16,4 +17,8 @@
   align-items: center;
   padding-right: 2rem;
   width: 150px;
+}
+
+.dark {
+  background-color: var(--color-dark-nav);
 }

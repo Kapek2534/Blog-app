@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   align-self: flex-start;
+  transition: 0.2s ease-in-out;
 }
 
 .topics > span {
@@ -14,10 +15,19 @@
   display: block;
   font-size: 1.2rem;
   text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.dark.topics > span {
+  color: var(--color-white-dark-theme);
 }
 
 .topics ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.topics.dark {
+  background-color: var(--color-dark-nav);
 }

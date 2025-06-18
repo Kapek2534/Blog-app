@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 3px solid var(--color-violet-light);
+  border: 3px solid var(--color-violet);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@
 .bar {
   width: 100%;
   height: 50px;
-  background-color: var(--color-violet-light);
+  background-color: var(--color-violet);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@ span {
 
 .heartIcon:hover {
   transform: scale(1.3);
-  color: var(--color-violet);
+  color: red;
   cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 import { FlexContainer } from "../FlexContainer/FlexContainer";
 
-import flatAbout from "../../assets/flatAbout.png";
+import flatAbout from "../../assets/flatAbout_no_bg.png";
 import styles from "./About.module.css";
 
 export function About() {

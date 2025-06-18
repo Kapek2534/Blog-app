@@ -2,10 +2,15 @@ import { useNavigate } from "react-router-dom";
 import { BACK_END_URL } from "../../constants/api";
 import styles from "./PostForm.module.css";
 
+import { LightmodeContext } from "../../contexts/LightmodeContext";
+
 import { useForm } from "react-hook-form";
+import { useContext } from "react";
 
 export function PostForm() {
   const navigate = useNavigate();
+
+  const [isDark] = useContext(LightmodeContext);
 
   const {
     register,
@@ -54,8 +59,11 @@ export function PostForm() {
   };
 
   return (
-    <div className={styles.formWrapper}>
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.postForm}>
+    <div className={`${styles.formWrapper} ${isDark && styles.dark}`}>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className={`${styles.postForm} ${isDark && styles.dark}`}
+      >
         <div>
           <label htmlFor="title">Tytuł:</label>
           <input

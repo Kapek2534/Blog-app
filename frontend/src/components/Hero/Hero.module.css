@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   max-width: max-content;
+  transition: 0.2s ease-in-out;
 }
 
 .contentWrapper h2 {
@@ -28,4 +29,8 @@
 
 .contentWrapper p {
   margin-top: 1rem;
+}
+
+.contentWrapper.dark {
+  background: rgba(52, 52, 52, 0.9);
 }

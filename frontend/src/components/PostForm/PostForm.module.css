@@ -85,3 +85,16 @@
   margin: 0 auto;
   display: block;
 }
+
+.formWrapper.dark {
+  background-color: var(--color-dark-nav);
+}
+
+.dark.postForm label {
+  color: var(--color-white-dark-theme);
+}
+
+.dark.postForm input,
+.dark.postForm textarea {
+  background-color: var(--color-dark-main);
+}
