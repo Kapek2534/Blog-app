@@ -1,1 +1,1 @@
-export const BACK_END_URL = "http://localhost:4000";
+export const BACK_END_URL = "https://blog-app-alpa.onrender.com";
